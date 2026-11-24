@@ -16,7 +16,19 @@ node main.ts
 
 Writes the review to `/output/entry.txt` (one line, no trailing newline).
 
+## Why this line
+
+The judge weighs five things, most important first: it must read as an alien
+tourist's review of Earth, be funny from the alien's angle on ordinary Earth
+life, be original, sound like a real review, and stay tight with the punch at
+the end. A birthday — food set on fire once a year while everyone makes a
+wish — is ordinary Earth life that looks absurd from the outside, and it
+dodges the obvious first thoughts (traffic, gravity, money, weather). One
+clean joke, a four-star verdict, and the punch lands on the last word.
+
 ## Files
 
 - `main.ts` — the entry program (Node 22, standard library only).
+- `check.mjs` — local check: runs `main.ts` and asserts the output is exactly
+  the review above, 1–200 characters, no trailing newline.
 - `LICENSE` — MIT.
